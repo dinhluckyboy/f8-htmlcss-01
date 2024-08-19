@@ -82,6 +82,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <!-- start lato font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -96,6 +97,20 @@
     <header class="header">
       <div class="content">
         <div class="nav">
+          <div class="nav_bars hide-on-pc">
+            <label for="check-header">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                fill="currentColor"
+              >
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </label>
+          </div>
           <img src="./assets/img/Logo.svg" alt="" class="logo" />
           <ul>
             <li>Home</li>
@@ -127,6 +142,27 @@
         </div>
       </div>
     </header>
+    <!-- header for tablet and mobile -->
+    <div class="mobile-header hide-on-pc">
+      <input
+        type="checkbox"
+        name="check-header"
+        id="check-header"
+        for="check-header"
+        class="check-header"
+        hidden
+      />
+      <label for="check-header" class="menu-overlay"></label>
+      <div class="menu-drawer">
+        <ul>
+          <li>Home</li>
+          <li>Features</li>
+          <li>Services</li>
+          <li>Resources</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
     <main>
       <div class="clients">
         <div class="content">
@@ -156,22 +192,40 @@
           </p>
           <ul class="list-guide">
             <li class="guide-items">
-              <img src="./assets/img/buyer.svg" alt="buyer" />
+              <div class="guide-icon">
+                <img src="./assets/img/buyer.svg" alt="buyer" />
+              </div>
               <h3>Buyer Guides</h3>
               <span>How to buy</span>
-              <img src="./assets/img/Vector.svg" alt="vector" />
+              <img
+                src="./assets/img/Vector.svg"
+                alt="vector"
+                class="arrow-left"
+              />
             </li>
             <li class="guide-items">
-              <img src="./assets/img/renter.svg" alt="buyer" />
+              <div class="guide-icon">
+                <img src="./assets/img/renter.svg" alt="buyer" />
+              </div>
               <h3>Buyer Guides</h3>
               <span>How to buy</span>
-              <img src="./assets/img/Vector.svg" alt="renter" />
+              <img
+                src="./assets/img/Vector.svg"
+                alt="renter"
+                class="arrow-left"
+              />
             </li>
             <li class="guide-items">
-              <img src="./assets/img/seller.svg" alt="buyer" />
+              <div class="guide-icon">
+                <img src="./assets/img/seller.svg" alt="buyer" />
+              </div>
               <h3>Buyer Guides</h3>
               <span>How to buy</span>
-              <img src="./assets/img/Vector.svg" alt="seller" />
+              <img
+                src="./assets/img/Vector.svg"
+                alt="seller"
+                class="arrow-left"
+              />
             </li>
           </ul>
           <a href="#!" class="btn">Sell Full Guidelines</a>
@@ -281,7 +335,7 @@
       </div>
       <div class="stats">
         <div class="content">
-          <div class="row">
+          <div class="row-top">
             <div class="img-block">
               <img
                 class="stats-img"
@@ -479,7 +533,7 @@
     </main>
     <footer class="footer">
       <div class="content">
-        <div class="row row-top">
+        <div class="row-top">
           <ul>
             <li>Product</li>
             <li>Listing</li>

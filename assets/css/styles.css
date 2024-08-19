@@ -30,7 +30,7 @@ body {
 
 .content {
   width: 1110px;
-  max-width: 100%;
+  max-width: calc(100% - 140px);
   margin: 0 auto;
 }
 
@@ -44,6 +44,12 @@ header {
   background-color: #e6f0ff;
   width: 100vw;
   height: 100vh;
+}
+
+.header .nav_bars {
+  width: 24px;
+  height: 24px;
+  color: var(--primary-color);
 }
 
 header .nav {
@@ -374,6 +380,10 @@ header .nav .action-sign-up {
   padding: 125px 0 103px 0;
 }
 
+.stats .row-top {
+  display: flex;
+}
+
 .stats .img-block,
 .stats .stats-info {
   width: 50%;
@@ -583,7 +593,7 @@ header .nav .action-sign-up {
   margin-top: 22px;
   color: #7b8087;
   font-style: normal;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
   line-height: normal;
 }
@@ -653,6 +663,7 @@ footer {
 }
 
 footer .row-top {
+  display: flex;
   gap: 185px;
 }
 
