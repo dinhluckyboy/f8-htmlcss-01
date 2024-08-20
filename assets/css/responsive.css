@@ -173,4 +173,157 @@
 }
 /* Mobile  */
 @media screen and (max-width: 767.98px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .action-mobile {
+    text-align: center;
+  }
+
+  .sign-in-mobile {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #0f1b4c;
+    text-decoration: none;
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+
+  .sign-up-mobile.btn {
+    display: inline-block;
+    padding: 8px 12px;
+  }
+
+  /* hero  */
+
+  .header .hero {
+    margin-top: 76px;
+  }
+
+  .hero p.sub-title {
+    font-size: 1.2rem;
+  }
+
+  .hero h1.title {
+    font-size: 3.8rem;
+  }
+
+  .hero p.desc {
+    font-size: 1.3rem;
+    margin-top: 18px;
+  }
+
+  /* clients  */
+
+  .clients .content .row p:first-child {
+    font-size: 1.3rem;
+  }
+
+  /* guides  */
+
+  .guides h2.title {
+    font-size: 2.3rem;
+  }
+
+  .guides p.desc {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  .guides .list-guide {
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  .guides .content .btn {
+    margin-left: -10%;
+    transform: translateX(50%);
+  }
+
+  /* featured  */
+  .featured .content h2 {
+    font-size: 2.3rem;
+  }
+
+  .featured .row p.desc {
+    font-size: 1.3rem;
+  }
+
+  .featured .row a.link {
+    font-size: 1.4rem;
+  }
+
+  .featured .content .header .row {
+    align-items: start;
+    row-gap: 32px;
+  }
+
+  .featured .list-features {
+    margin-top: 18px;
+    grid-template-columns: 1fr;
+  }
+
+  .featured .content .box h3 {
+    font-size: 1.8rem;
+  }
+
+  .featured .content .box .desc {
+    font-size: 1.2rem;
+  }
+
+  .featured .feature-item .box-icon .icon-item {
+    flex-direction: column;
+    row-gap: 4px;
+  }
+
+  /* stats  */
+  .stats .stats-info .title {
+    font-size: 2.3rem;
+    width: 100%;
+  }
+
+  .stats .stats-info .desc {
+    font-size: 1.3rem;
+  }
+
+  .stats .content .img-block .trend {
+    background-color: #ffffffd4;
+  }
+
+  .stats .content .quantity .container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 42px;
+    text-align: center;
+  }
+
+  /* subscribe  */
+
+  .subscribe .content .content-box {
+    top: 0;
+    left: 0;
+  }
+
+  .subscribe .content .text-box {
+    width: 80%;
+    top: 24px;
+    left: 24px;
+  }
+
+  .subscribe .text-box h2.title {
+    font-size: 2.3rem;
+  }
+
+  /* footer  */
+
+  footer .content .row-bottom {
+    display: block;
+  }
+
+  footer .content .row-bottom .license {
+    margin-top: 16px;
+    font-size: 1.2rem;
+  }
 }
